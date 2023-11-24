@@ -5,7 +5,7 @@ nginx_error_list = ['nginx: command not found']
 
 class NginxConf:
     NGINX = 'nginx'
-    NGINX_OTHER = 'conf.d'
+    NGINX_OTHER = 'sites-available'
     NGINX_HOST = '127.0.0.1'
     NGINX_PORT = '80'
 

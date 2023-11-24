@@ -16,7 +16,7 @@ class Uwsgi(BaseSetting):
             service_dir = self.args.service_dir
         uwsgi_file.write_text(f"""
 [uwsgi]
-uwsgi-socket=:{self.args.nginx_port}
+http=:{self.args.nginx_port}
 env = IS_DEBUG=0
 chdir={self.service_path}
 module={self.args.service_name}.wsgi:application
